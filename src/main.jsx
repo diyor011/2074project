@@ -5,7 +5,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
-import App from './App.jsx'
+import App from './App.jsx' 
+import ClockPage from './pages/ClockPage.jsx'
 
 
   const router = createBrowserRouter([
@@ -13,6 +14,11 @@ import App from './App.jsx'
     path: "/",
     element: <App />,
   },
+  {
+    path: "Clock",
+    element: <ClockPage />,
+  }
+
   
 ]);
 
